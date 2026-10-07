@@ -1,0 +1,12 @@
+# Python 运行时会生成的缓存文件（不需要提交）
+__pycache__/
+*.py[cod]
+
+# 虚拟环境目录（体积大、能重建）
+.venv/
+venv/
+
+# 编辑器和系统自动生成的文件
+.vscode/
+.DS_Store
+Thumbs.db
