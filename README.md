@@ -42,26 +42,38 @@ python temp_converter.py
 
 ---
 
-## 用 Git 保存进度（第 1 周就要做）
+## 用 Git 保存进度
 
-第一次（只做一遍）：
+仓库已经建好并推到 GitHub 了：<https://github.com/qazwsx123456edc/python-practice>
+（远端已关联为 `origin`，分支是 `main`）
+
+**每天收尾就三行：**
 
 ```powershell
 cd D:\dsh.workspace\python-practice
-git init
-git add .
-git commit -m "chore: 初始化 Python 练习目录"
-```
-
-之后每天收尾就三行：
-
-```powershell
 git add .
 git commit -m "feat: 完成温度转换器"
+git push
 ```
 
-> 想推到 GitHub：先在网页上建一个空仓库，然后
-> `git remote add origin <仓库地址>` → `git push -u origin main`
+第一次 push 已经让你在浏览器里授权过一次了，之后不用再登录。
+
+### 提交信息怎么写（现在养成习惯）
+
+| 前缀 | 什么时候用 | 例子 |
+| --- | --- | --- |
+| `feat` | 新增功能 / 完成一份练习 | `feat: 完成秒数换算` |
+| `fix` | 修好一个 bug | `fix: 修正除零报错` |
+| `docs` | 只改文档或注释 | `docs: 补充运行说明` |
+| `chore` | 杂项（整理、配置） | `chore: 添加 .gitignore` |
+
+### 随时查看状态
+
+```powershell
+git status            # 哪些改动还没提交
+git log --oneline     # 提交历史
+git diff              # 具体改了哪几行
+```
 
 ---
 
